@@ -85,7 +85,7 @@ We applied model visualization by Class Acitivation Mapping following:
 
 [Class Activation Map methods implemented in Pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
 
-![original](/CAM/gradcam++_original_Example_img.jpg_1.jpg) ![CAM](/CAM/gradcam++_cam_Example_img.jpg_1.jpg) ![Guided-CAM](/CAM/gradcam++_cam_gb_Example_img.jpg_1.jpg)
+![](/CAM/gradcam++_original_Example_img.jpg_1.jpg) ![](/CAM/gradcam++_cam_Example_img.jpg_1.jpg) ![](/CAM/gradcam++_cam_gb_Example_img.jpg_1.jpg)
 
  ## References
  
