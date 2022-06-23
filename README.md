@@ -9,37 +9,6 @@ This respitory contains the code that is made as an extension on previous work. 
 ## Google Colab-Pytorch Implmentation
 The code is written in Google Colab using poytorch. No installments are required, you need only to change the runtime type to GPU.
 
-## Training protocols
-### Training from Scratch
-When trained from scratch, the trainable parameters of the model are random initialized. This method usually requires large amount of data. 
-
-### Transfer Learning:
-Transfer learning is the improvement of learning in a new
-task through the transfer of knowledge from a related task that has al-
-ready been learned. While most machine learning algorithms are designed
-to address single tasks, the development of algorithms that facilitate
-transfer learning is a topic of ongoing interest in the machine-learning
-community.
-
-Fine tuning - starts with a pretrained model and update all of the model’s parameters for our new task, 
-in essence retraining the whole model. 
-
-Feature extraction- starts with a pretrained model and only update the final layer weights from which we derive predictions. It is called feature extraction 
-because we use the pretrained CNN as a fixed feature-extractor, and only change the output layer.
-
- ## pre-trained models
- In the algorithm there is a choice for several pre-trained models. These include:
- ### 1- AlexNet (2012)
-In 2012, AlexNet significantly outperformed all the prior competitors and won the challenge by reducing the top-5 error from 26% to 15.3%.
-The second place top-5 error rate, which was not a CNN variation, was around 26.2%. see [AlexNet document](http://cvml.ist.ac.at/courses/DLWT_W17/material/AlexNet.pdf)
-### VGGNet (2014)
-The runner-up at the ILSVRC 2014 competition is dubbed VGGNet by the community and was developed by Simonyan and Zisserman . VGGNet consists of 16 convolutional layers and is very appealing because of its very uniform architecture. 
-Similar to AlexNet, only 3x3 convolutions, but lots of filters. Trained on 4 GPUs for 2–3 weeks. see [VGGNet document](https://arxiv.org/pdf/1409.1556.pdf)
-### ResNet(2015)
-ILSVRC 2015, the so-called Residual Neural Network (ResNet) by Kaiming He et al introduced 
-anovel architecture with “skip connections” and features heavy batch normalization.They were able to train a NN with 152 layers while still having lower complexity than VGGNet. 
-It achieves a top-5 error rate of 3.57% which beats human-level performance on this dataset. see [ResNet document](https://arxiv.org/abs/1512.03385)
-
 ## Work Flow
 
 Step 0) Open the code in Google Colab and set runtime type to GPU. 
@@ -62,20 +31,20 @@ Step 4) Train the network
 This will output training information that looks like this:
 
 <pre><code>
-model: resnet50, Epoch: [48/1000]
+model: resnet50, Epoch: [51/1000]
 ----------
-train Loss: 0.2437 Acc: 0.9118 LR:0.00040297376309494926
-val Loss: 0.6593 Acc: 0.7353 LR:0.00040297376309494926
+train Loss: 0.1982 Acc: 0.9228 LR:0.00040462982701110727
+val Loss: 0.5292 Acc: 0.8529 LR:0.00040462982701110727
 EarlyStopping counter: 20 out of 20
 
 Early stopping
-Training complete in 5m 57s
-Best val Acc: 85.294118
+Training complete in 6m 23s
+Best val Acc: 89.705882
 </code></pre>
 
 The training and validation losses can be plotted, looking like this:
 
-![](/figures/loss_plot_resnet50_ft_1.png?raw=true)
+![](/figures/loss_plot_ft_resnet50_1.png)
 
 Step 5) Test the models
 
@@ -98,26 +67,29 @@ An important part in machine learning is the skill evaluation which will be done
 <pre><code>
               precision    recall  f1-score   support
 
-         Ref       1.00      0.90      0.95        10
-         LTT       0.74      0.88      0.80        16
-         TBR       0.79      0.73      0.76        15
-         RBB       0.88      0.74      0.80        19
-         LBT       0.70      0.88      0.78         8
+         Ref       0.71      1.00      0.83        10
+         LTT       0.79      0.69      0.73        16
+         TBR       0.76      0.87      0.81        15
+         RBB       0.92      0.67      0.77        18
+         LBT       0.80      0.89      0.84         9
 
-    accuracy                           0.81        68
-   macro avg       0.82      0.82      0.82        68
-weighted avg       0.82      0.81      0.81        68
+    accuracy                           0.79        68
+   macro avg       0.80      0.82      0.80        68
+weighted avg       0.81      0.79      0.79        68
 </code></pre>
 
 And the confusion matrix:
 
-![](/figures/loss_plot_resnet50_ft_1.png?raw=true)
+![](/figures/CM_ft_resnet50_1.png)
 
 Step 7) Model Visualization
 
-We applied model visualization for interpretation.
+We applied model visualization by Class Acitivation Mapping following: 
 
 [Class Activation Map methods implemented in Pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
+
+![original](/CAM/gradcam++_original_Example_img.jpg_1.jpg) ![Guided Backpropagation](/CAM/gradcam++_gb_Example_img.jpg_1.jpg) ![CAM](/CAM/gradcam++_cam_Example_img.jpg_1.jpg) ![Guided-CAM](/CAM/gradcam++_cam_gb_Example_img.jpg_1.jpg)
+
  ## References
  
    1-[transfer learning tutorial on pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
