@@ -81,9 +81,7 @@ And the confusion matrix:
 
 Step 7) Model Visualization
 
-We applied model visualization by Class Acitivation Mapping following: 
-
-[Class Activation Map methods implemented in Pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
+We applied model visualization by Class Acitivation Mapping following [pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam).
 
 ![](/CAM/gradcam++_original_Example_img_1.jpg) ![](/CAM/gradcam++_cam_Example_img_1.jpg) ![](/CAM/gradcam++_cam_gb_Example_img_1.jpg)
 
