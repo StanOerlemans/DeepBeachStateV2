@@ -3,7 +3,7 @@
 ## Summary
 This respitory contains the code that is made as an extension on [previous work](https://github.com/anellenson/DeepBeachState). We applied the algoritm for the classification of Argus imagery for the classification of single- and double-barred beach systems. We applied transfer learning, in which we fine-tuned the ResNet50 model. 
 
-## Google Colab-Pytorch Implmentation
+## Google Colab-Pytorch Implementation
 The code is written in Google Colab using poytorch. No installments are required, you need only to change the runtime type to GPU.
 
 ## Work Flow
@@ -87,6 +87,6 @@ We applied model visualization by Class Acitivation Mapping following [pytorch-g
 
  ## References
  
-   1 - [transfer learning tutorial on pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
+   1 - [Pytorch Transfer Learning Tutorial](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
    
    2 - [Beach State Recognition Using Argus Imagery and Convolutional Neural Networks](https://www.mdpi.com/2072-4292/12/23/3953)
