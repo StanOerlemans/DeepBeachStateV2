@@ -8,9 +8,9 @@ The code is written in Google Colab using poytorch. No installments are required
 
 ## Work Flow
 
-Step 0) Open the code in Google Colab and set runtime type to GPU. 
+Step 0) Open the code in Google Colab and set runtime type to GPU 
 
-Step 1) Collect the data and upload it to your Google Drive. Run the code and visualize your data.
+Step 1) Collect the data and upload it to your Google Drive. Run the code and visualize your data
 
 Step 2) Initialize the network
 
@@ -48,7 +48,7 @@ Step 5) Test the models
 Testing the model on test data results in:
 
 <pre><code>
-Accuracy of the network on the test dataset : 80 %
+Accuracy of the network on the test dataset : 80%
 </code></pre>
 
 Step 6) Report the performance
