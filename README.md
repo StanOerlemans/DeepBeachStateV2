@@ -1,10 +1,7 @@
 # DeepBeachStateV2 - Image-Based Classification Using a Convolutional Neural Network and Transfer Learning
 
 ## Summary
-This respitory contains the code that is made as an extension on previous work. We applied the algoritm for the classification of Argus imagery for the classification of single- and double-barred beach systems. We applied transfer learning, in which we fine-tuned the ResNet50 model. 
-
- - [Paper: Beach State Recognition Using Argus Imagery and Convolutional Neural Networks](https://www.mdpi.com/2072-4292/12/23/3953)
-      - [Algoritm: DeepBeachState](https://github.com/anellenson/DeepBeachState)
+This respitory contains the code that is made as an extension on [previous work](https://github.com/anellenson/DeepBeachState). We applied the algoritm for the classification of Argus imagery for the classification of single- and double-barred beach systems. We applied transfer learning, in which we fine-tuned the ResNet50 model. 
 
 ## Google Colab-Pytorch Implmentation
 The code is written in Google Colab using poytorch. No installments are required, you need only to change the runtime type to GPU.
@@ -88,14 +85,10 @@ We applied model visualization by Class Acitivation Mapping following:
 
 [Class Activation Map methods implemented in Pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
 
-![original](/CAM/gradcam++_original_Example_img.jpg_1.jpg) ![Guided Backpropagation](/CAM/gradcam++_gb_Example_img.jpg_1.jpg) ![CAM](/CAM/gradcam++_cam_Example_img.jpg_1.jpg) ![Guided-CAM](/CAM/gradcam++_cam_gb_Example_img.jpg_1.jpg)
+![original](/CAM/gradcam++_original_Example_img.jpg_1.jpg) ![CAM](/CAM/gradcam++_cam_Example_img.jpg_1.jpg) ![Guided-CAM](/CAM/gradcam++_cam_gb_Example_img.jpg_1.jpg)
 
  ## References
  
-   1-[transfer learning tutorial on pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
+   1 - [transfer learning tutorial on pytorch](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html)
    
-   2- [transfer learning tutorial](https://ruder.io/transfer-learning/)
-   
-   3- [implemnted CNN overview](https://medium.com/@sidereal/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5)
-   
-   4- [transfer learning tutorial on github](http://cs231n.github.io/transfer-learning/)
+   2 - [Beach State Recognition Using Argus Imagery and Convolutional Neural Networks](https://www.mdpi.com/2072-4292/12/23/3953)
