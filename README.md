@@ -1,8 +1,6 @@
 # DeepBeachStateV2
 
-This respitory provides a skeleten of how to implement a CNN on Argus data.
-
-It is an extension on previous work for the automated classification of not only single-barred beach state, but also for double-barred beach states.
+This respitory provides a skeleten of how to implement a CNN on Argus data. This code is made as an extension on previous work for the automated classification of not only single-barred beach state, but also for double-barred beach states.
 
 The code is written in Google Colab so no installments are required, you need only to change the runtime type to GPU.
 
