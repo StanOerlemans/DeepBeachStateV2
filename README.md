@@ -1,7 +1,7 @@
 # DeepBeachStateV2 - Image-Based Classification Using a Convolutional Neural Network and Transfer Learning
 
 ## Summary
-This respitory contains the code and the [corresponding paper]([https://github.com/anellenson/DeepBeachState](https://www.mdpi.com/2072-4292/14/19/4686)) in which we applied an algoritm for the classification of Argus imagery for the classification of single- and double-barred beach systems. We applied transfer learning, in which we fine-tuned the ResNet50 model. 
+This respitory contains the code and the [corresponding paper]([https://www.mdpi.com/2072-4292/14/19/4686]) in which we applied an algoritm for the classification of Argus imagery for the classification of single- and double-barred beach systems. We applied transfer learning, in which we fine-tuned the ResNet50 model. 
 
 ## Google Colab-Pytorch Implementation
 The code is written in Google Colab using poytorch. No installments are required, you need only to change the runtime type to GPU.
